@@ -10,6 +10,10 @@ const nextConfig = {
 			'@/styles': path.resolve(__dirname, './styles'),
 			'@/assets': path.resolve(__dirname, './assets')
 		}
+		config.module.rules.push({
+			test: /\.svg$/,
+			use: ['@svgr/webpack'],
+		})
 		return config
 	}
 };
