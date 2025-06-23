@@ -1,5 +1,15 @@
+import Image from 'next/image'
 export default async function Page() {
   return (
-    <div className="h-60 flex-1 rounded-xl bg-teal-400 text-white flex items-center justify-center m-6">About Page!</div>
-  )
+    <>
+      <p className='text-center '> Welcome to our About page! This page is about me.</p>
+      <Image
+          className="mx-auto mt-2"
+          src="/assets/images/turborepo-dark.svg"
+          alt="Crowdin Translation Management System"
+          width={128}
+          height={26}
+        />
+    </>
+  );
 }
