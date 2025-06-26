@@ -7,7 +7,6 @@ import {
   SignedOut,
   UserButton,
 } from '@clerk/nextjs'
-import '@/styles/global.css'
 import Link from '@repo/ui/link'
 export const metadata: Metadata = {
   title: "Create Next App",

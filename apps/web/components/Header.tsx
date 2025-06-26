@@ -1,6 +1,5 @@
 'use client'
-import "@/styles/global.css";
-import Link from "@repo/ui/link";
+import Link from "@repo/ui/components/ui/link";
 import {
   SignInButton,
   SignUpButton,
@@ -9,6 +8,7 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 import { usePathname } from 'next/navigation'
+import ToggleTheme from '@/components/toggle-theme'
 const navigation = [
   { title: "Home", path: "/" },
   { title: "Blog", path: "/blog" },
@@ -28,6 +28,7 @@ export default function CustomHeader () {
 				})}
 			</div>
 			<div className="gap-x-6 flex items-center justify-center">
+				<ToggleTheme />
 				<SignedOut>
 					<div className="gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 hover:bg-gray-700 active:bg-gray-900 rounded-full inline-flex cursor-pointer">
 						<SignInButton />

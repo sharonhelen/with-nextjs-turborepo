@@ -1,8 +1,7 @@
-import '@/styles/global.css'
 export default function NotFound() {
   return (
     <main>
-      <div className="mx-auto px-4 flex items-center justify-start px-8 mt-6">
+      <div className="mx-auto flex items-center justify-start px-8 mt-6">
         <div className="max-w-lg mx-auto text-center">
           <h3 className="text-gray-800 text-4xl font-semibold sm:text-5xl">
             Page not found

@@ -1,6 +1,5 @@
 
 import Link from '@repo/ui/link'
-
 export default function RootLayout({ children, tags, categories }: Readonly<{
   children: React.ReactNode,
   tags: React.ReactNode,

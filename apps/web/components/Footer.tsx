@@ -1,4 +1,4 @@
-import Link from '@repo/ui/link'
+import Link from '@repo/ui/components/ui/link'
 
 export default function CustomFooter () {
 	return (
